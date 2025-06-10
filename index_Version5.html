@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yael Rendon Soto - Página de Humor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Yael Rendon Soto</h1>
+        <nav>
+            <a href="#about">Sobre mí</a>
+            <a href="#galeria">Galería</a>
+            <a href="#opinion">Opinión sobre videojuegos</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <p>¡Hola! Soy Yael Rendon Soto y esta es mi página personal donde comparto imágenes y videos graciosos para que te diviertas y pases un buen rato. ¡Espero que disfrutes el contenido!</p>
+    </section>
+    <section id="galeria">
+        <h2>Galería de Imágenes y Videos Graciosos</h2>
+        <div class="gallery">
+            <!-- Ejemplo de imagen graciosa -->
+            <div class="gallery-item">
+                <img src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif" alt="Gif gracioso">
+                <p>¡Cuando intentas programar y nada sale bien!</p>
+            </div>
+            <!-- Ejemplo de video gracioso -->
+            <div class="gallery-item">
+                <video controls width="320">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Tu navegador no soporta videos HTML5.
+                </video>
+                <p>Video gracioso de prueba</p>
+            </div>
+            <!-- Imagen agregada desde Discord -->
+            <div class="gallery-item">
+                <img src="https://media.discordapp.net/attachments/1191993605548687390/1381602009504809030/Screenshot_20250608_225429_Instagram3.jpg?ex=68496e23&is=68481ca3&hm=4b3ee2ede75cc4745189ae248290d3a2b096812f992a9648a877e67ff2e7b8be&=&format=webp&width=533&height=881" alt="Imagen graciosa de Discord">
+                <p>¡Meme enviado desde Discord!</p>
+            </div>
+        </div>
+    </section>
+    <section id="opinion">
+        <h2>Opinión sobre videojuegos</h2>
+        <p>
+            Me encantan los videojuegos y aquí comparto mi opinión sobre los títulos que más me han gustado, los que espero o los que quiero recomendar. ¡Si quieres que hable de algún juego en especial, escríbeme!
+        </p>
+        <ul>
+            <li><strong>The Legend of Zelda: Breath of the Wild</strong>: Un juego increíblemente abierto, lleno de aventuras y sorpresas. ¡Altamente recomendado!</li>
+            <li><strong>Among Us</strong>: Perfecto para jugar con amigos y reírse un buen rato.</li>
+            <li><strong>Super Mario Odyssey</strong>: Un clásico moderno lleno de creatividad.</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="form-message"></div>
+    </section>
+    <footer>
+        <p>© 2025 Yael Rendon Soto - Sígueme en 
+            <a href="#" target="_blank">Twitter</a>, 
+            <a href="#" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
