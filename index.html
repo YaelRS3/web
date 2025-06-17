@@ -1,207 +1,131 @@
-body {
-    font-family: 'Montserrat', Arial, sans-serif;
-    background: linear-gradient(135deg, #e9f5ff 0%, #f5d0e6 100%);
-    margin: 0;
-    min-height: 100vh;
-    color: #222;
-    position: relative;
-}
-
-.background-gradient {
-    position: fixed;
-    z-index: 0;
-    width: 100vw;
-    height: 100vh;
-    background: radial-gradient(circle at 70% 30%, #fdc1c5 0%, #9be7ff 80%, transparent 100%);
-    opacity: 0.3;
-    pointer-events: none;
-    top: 0;
-    left: 0;
-}
-
-header {
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 2px 8px #e0e0e0;
-    padding: 1rem 0;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.4rem;
-    letter-spacing: 2px;
-    color: #fc5c7d;
-    font-weight: 700;
-}
-
-header .emoji {
-    font-size: 2rem;
-    vertical-align: middle;
-}
-
-nav {
-    margin-top: 0.5rem;
-}
-
-nav a {
-    color: #3a3a3a;
-    text-decoration: none;
-    font-weight: 500;
-    margin: 0 1rem;
-    font-size: 1.1rem;
-    padding: 0.4em 1em;
-    border-radius: 30px;
-    transition: background 0.3s, color 0.3s;
-    display: inline-block;
-}
-
-nav a:hover, nav a:focus {
-    background: #fc5c7d;
-    color: #fff;
-}
-
-main {
-    padding: 2rem 1rem 1rem 1rem;
-    max-width: 1100px;
-    margin: 0 auto;
-    z-index: 2;
-    position: relative;
-}
-
-.section-card {
-    background: rgba(255,255,255,0.95);
-    margin-bottom: 2rem;
-    border-radius: 24px;
-    box-shadow: 0 6px 24px 0 #fdd9e5;
-    padding: 2rem;
-}
-
-h2 {
-    color: #fc5c7d;
-    margin-top: 0;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-}
-
-.gallery-item {
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 2px 8px #eecbe0;
-    padding: 1rem;
-    width: 320px;
-    text-align: center;
-    margin-bottom: 1rem;
-    transition: transform 0.2s;
-    z-index: 2;
-}
-
-.gallery-item:hover {
-    transform: translateY(-8px) scale(1.04);
-    box-shadow: 0 6px 20px #eecbe0;
-}
-
-.gallery-item img, .gallery-item iframe {
-    max-width: 100%;
-    border-radius: 12px;
-    margin-bottom: 0.6rem;
-}
-
-ul {
-    padding-left: 1.2rem;
-}
-
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-#contact-form label {
-    font-weight: 500;
-    color: #fc5c7d;
-    margin-bottom: 0.2rem;
-}
-
-#contact-form input, #contact-form textarea {
-    border: 1.5px solid #f8b6d4;
-    border-radius: 12px;
-    padding: 0.7rem;
-    font-size: 1rem;
-    outline: none;
-    transition: border-color 0.2s;
-    background: #fdf6fa;
-}
-
-#contact-form input:focus, #contact-form textarea:focus {
-    border-color: #fc5c7d;
-}
-
-#contact-form button {
-    background: linear-gradient(90deg,#fc5c7d,#6a82fb);
-    color: #fff;
-    border: none;
-    border-radius: 24px;
-    font-size: 1.15rem;
-    padding: 0.8rem 0;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-    margin-top: 0.5rem;
-}
-
-#contact-form button:hover {
-    background: linear-gradient(90deg,#6a82fb,#fc5c7d);
-    transform: scale(1.04);
-}
-
-#form-message {
-    margin-top: 1rem;
-    color: #34c759;
-    font-weight: 600;
-    text-align: center;
-}
-
-footer {
-    background: rgba(255,255,255,0.85);
-    text-align: center;
-    padding: 1.5rem 0 1rem 0;
-    font-size: 1.1rem;
-    margin-top: 2rem;
-    border-radius: 24px 24px 0 0;
-    box-shadow: 0 -2px 16px #fdd9e5;
-}
-
-footer a {
-    color: #fc5c7d;
-    margin: 0 0.5rem;
-    text-decoration: none;
-    font-weight: 700;
-    transition: color 0.2s;
-}
-
-footer a:hover {
-    color: #6a82fb;
-}
-
-@media (max-width: 800px) {
-    .gallery {
-        flex-direction: column;
-        align-items: center;
-    }
-    main {
-        padding: 1rem 0.2rem;
-    }
-    .section-card {
-        padding: 1rem;
-    }
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yael Rendon Soto - Página de Humor</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts para un estilo más moderno -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="background-gradient"></div>
+    <header>
+        <h1><span class="emoji">😂</span> Yael Rendon Soto <span class="emoji">🎮</span></h1>
+        <nav>
+            <a href="#about"><i class="fa-solid fa-user"></i> Sobre mí</a>
+            <a href="#galeria"><i class="fa-solid fa-image"></i> Galería</a>
+            <a href="#opinion"><i class="fa-solid fa-gamepad"></i> Opinión videojuegos</a>
+            <a href="#contact"><i class="fa-solid fa-envelope"></i> Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="section-card">
+            <h2>Sobre mí</h2>
+            <p>¡Hola! Soy Yael Rendon Soto y esta es mi página personal donde comparto imágenes y videos graciosos para que te diviertas y pases un buen rato. ¡Espero que disfrutes el contenido!</p>
+        </section>
+        <section id="galeria" class="section-card">
+            <h2>Galería de Imágenes y Videos Graciosos</h2>
+            <div class="gallery">
+                <!-- Video de saludo de YouTube -->
+                <div class="gallery-item">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/50DtXaSXHyc" title="Saludo YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>¡Un saludo especial!</p>
+                </div>
+                <!-- Gif de Tenor -->
+                <div class="gallery-item">
+                    <img src="https://media1.tenor.com/m/KGhz7poU1eIAAAAC/winnie-pooh-matrix.gif" alt="Winnie Pooh Matrix">
+                    <p>¡Axel!</p>
+                </div>
+                <!-- Álbum de Imgur -->
+                <div class="gallery-item">
+                    <blockquote class="imgur-embed-pub" lang="en" data-id="a/Q3IDhxt">
+                        <a href="//imgur.com/a/Q3IDhxt">Vape</a>
+                    </blockquote>
+                    <p>¡Imagen de Imgur: Vape!</p>
+                </div>
+                <!-- Imágenes individuales de Imgur -->
+                <div class="gallery-item">
+                    <img src="https://i.imgur.com/4fiyseG.jpg" alt="Imagen de Imgur">
+                    <p>¡Imagen divertida de Imgur!</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.imgur.com/kxHokm5.jpg" alt="Imagen de Imgur">
+                    <p>¡Otra imagen divertida de Imgur!</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.imgur.com/pZfsPha.jpg" alt="Imagen de Imgur">
+                    <p>¡Otra imagen graciosa de Imgur!</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.imgur.com/ykUsKkE.jpg" alt="Imagen de Imgur">
+                    <p>¡Más humor con Imgur!</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.imgur.com/ugGLq2i.jpg" alt="Imagen de Imgur">
+                    <p>¡Otra más de Imgur!</p>
+                </div>
+                <!-- Videos de YouTube -->
+                <div class="gallery-item">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/6fscFinNPCU" title="Video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>¡Nuevo video agregado!</p>
+                </div>
+                <div class="gallery-item">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/1IWvyq89G5E" title="Video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>¡Otro video divertido!</p>
+                </div>
+                <div class="gallery-item">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/PDZH2Bn-u9k" title="Video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>¡Otro video genial!</p>
+                </div>
+                <div class="gallery-item">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/p0T0gipONL8" title="Video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>¡Nuevo video divertido 1!</p>
+                </div>
+                <div class="gallery-item">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/nv_psEcJqPI" title="Video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>¡Nuevo video divertido 2!</p>
+                </div>
+            </div>
+            <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+        </section>
+        <section id="opinion" class="section-card">
+            <h2>Opinión sobre videojuegos</h2>
+            <p>
+                Me encantan los videojuegos y aquí comparto mi opinión sobre los títulos que más me han gustado, los que espero o los que quiero recomendar. ¡Si quieres que hable de algún juego en particular, mándame mensaje!
+            </p>
+            <ul>
+                <li><strong>The Legend of Zelda: Breath of the Wild</strong>: Un juego increíblemente abierto, lleno de aventuras y sorpresas. ¡Altamente recomendado!</li>
+                <li><strong>Among Us</strong>: Perfecto para jugar con amigos y reírse un buen rato.</li>
+                <li><strong>Super Mario Odyssey</strong>: Un clásico moderno lleno de creatividad.</li>
+            </ul>
+        </section>
+        <section id="contact" class="section-card">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <label for="name"><i class="fa-solid fa-user"></i> Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email"><i class="fa-solid fa-envelope"></i> Correo:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message"><i class="fa-solid fa-comment"></i> Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+            </form>
+            <div id="form-message"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Yael Rendon Soto - Sígueme en 
+            <a href="https://twitter.com/tu_usuario" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>, 
+            <a href="https://linkedin.com/in/tu_usuario" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>, 
+            <a href="https://instagram.com/tu_usuario" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
