@@ -5,119 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yael Rendon Soto - Página de Humor</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts para un estilo más moderno -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+    <div class="background-gradient"></div>
     <header>
-        <h1>Yael Rendon Soto</h1>
+        <h1><span class="emoji">😂</span> Yael Rendon Soto <span class="emoji">🎮</span></h1>
         <nav>
-            <a href="#about">Sobre mí</a>
-            <a href="#galeria">Galería</a>
-            <a href="#opinion">Opinión sobre videojuegos</a>
-            <a href="#contact">Contacto</a>
+            <a href="#about"><i class="fa-solid fa-user"></i> Sobre mí</a>
+            <a href="#galeria"><i class="fa-solid fa-image"></i> Galería</a>
+            <a href="#opinion"><i class="fa-solid fa-gamepad"></i> Opinión videojuegos</a>
+            <a href="#contact"><i class="fa-solid fa-envelope"></i> Contacto</a>
         </nav>
     </header>
-    <section id="about">
-        <h2>Sobre mí</h2>
-        <p>¡Hola! Soy Yael Rendon Soto y esta es mi página personal donde comparto imágenes y videos graciosos para que te diviertas y pases un buen rato. ¡Espero que disfrutes el contenido!</p>
-    </section>
-    <section id="galeria">
-        <h2>Galería de Imágenes y Videos Graciosos</h2>
-        <div class="gallery">
-            <!-- Video de saludo de YouTube -->
-            <div class="gallery-item">
-                <iframe width="320" height="180" src="https://www.youtube.com/embed/50DtXaSXHyc" title="Saludo YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p>¡Un saludo especial!</p>
+    <main>
+        <section id="about" class="section-card">
+            <h2>Sobre mí</h2>
+            <p>¡Hola! Soy Yael Rendon Soto y esta es mi página personal donde comparto imágenes y videos graciosos para que te diviertas y pases un buen rato. ¡Espero que disfrutes el contenido!</p>
+        </section>
+        <section id="galeria" class="section-card">
+            <h2>Galería de Imágenes y Videos Graciosos</h2>
+            <div class="gallery">
+                <!-- Video de saludo de YouTube -->
+                <div class="gallery-item">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/50DtXaSXHyc" title="Saludo YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>¡Un saludo especial!</p>
+                </div>
+                <!-- Gif de Tenor -->
+                <div class="gallery-item">
+                    <img src="https://media1.tenor.com/m/KGhz7poU1eIAAAAC/winnie-pooh-matrix.gif" alt="Winnie Pooh Matrix">
+                    <p>¡Axel!</p>
+                </div>
+                <!-- Álbum de Imgur -->
+                <div class="gallery-item">
+                    <blockquote class="imgur-embed-pub" lang="en" data-id="a/Q3IDhxt">
+                        <a href="//imgur.com/a/Q3IDhxt">Vape</a>
+                    </blockquote>
+                    <p>¡Imagen de Imgur: Vape!</p>
+                </div>
+                <!-- Imágenes individuales de Imgur -->
+                <div class="gallery-item">
+                    <img src="https://i.imgur.com/4fiyseG.jpg" alt="Imagen de Imgur">
+                    <p>¡Imagen divertida de Imgur!</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.imgur.com/kxHokm5.jpg" alt="Imagen de Imgur">
+                    <p>¡Otra imagen divertida de Imgur!</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.imgur.com/pZfsPha.jpg" alt="Imagen de Imgur">
+                    <p>¡Otra imagen graciosa de Imgur!</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.imgur.com/ykUsKkE.jpg" alt="Imagen de Imgur">
+                    <p>¡Más humor con Imgur!</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.imgur.com/ugGLq2i.jpg" alt="Imagen de Imgur">
+                    <p>¡Otra más de Imgur!</p>
+                </div>
+                <!-- Videos de YouTube -->
+                <div class="gallery-item">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/6fscFinNPCU" title="Video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>¡Nuevo video agregado!</p>
+                </div>
+                <div class="gallery-item">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/1IWvyq89G5E" title="Video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>¡Otro video divertido!</p>
+                </div>
+                <div class="gallery-item">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/PDZH2Bn-u9k" title="Video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>¡Otro video genial!</p>
+                </div>
+                <div class="gallery-item">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/p0T0gipONL8" title="Video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>¡Nuevo video divertido 1!</p>
+                </div>
+                <div class="gallery-item">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/nv_psEcJqPI" title="Video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>¡Nuevo video divertido 2!</p>
+                </div>
             </div>
-            <!-- Gif de Tenor -->
-            <div class="gallery-item">
-                <img src="https://media1.tenor.com/m/KGhz7poU1eIAAAAC/winnie-pooh-matrix.gif" alt="Winnie Pooh Matrix">
-                <p>¡Axel!</p>
-            </div>
-            <!-- Álbum de Imgur -->
-            <div class="gallery-item">
-                <blockquote class="imgur-embed-pub" lang="en" data-id="a/Q3IDhxt">
-                    <a href="//imgur.com/a/Q3IDhxt">Vape</a>
-                </blockquote>
-                <p>¡Imagen de Imgur: Vape!</p>
-            </div>
-            <!-- Imágenes individuales de Imgur -->
-            <div class="gallery-item">
-                <img src="https://i.imgur.com/4fiyseG.jpg" alt="Imagen de Imgur">
-                <p>¡Imagen divertida de Imgur!</p>
-            </div>
-            <div class="gallery-item">
-                <img src="https://i.imgur.com/kxHokm5.jpg" alt="Imagen de Imgur">
-                <p>¡Otra imagen divertida de Imgur!</p>
-            </div>
-            <div class="gallery-item">
-                <img src="https://i.imgur.com/pZfsPha.jpg" alt="Imagen de Imgur">
-                <p>¡Otra imagen graciosa de Imgur!</p>
-            </div>
-            <div class="gallery-item">
-                <img src="https://i.imgur.com/ykUsKkE.jpg" alt="Imagen de Imgur">
-                <p>¡Más humor con Imgur!</p>
-            </div>
-            <div class="gallery-item">
-                <img src="https://i.imgur.com/ugGLq2i.jpg" alt="Imagen de Imgur">
-                <p>¡Otra más de Imgur!</p>
-            </div>
-            <!-- Video de YouTube agregado -->
-            <div class="gallery-item">
-                <iframe width="320" height="180" src="https://www.youtube.com/embed/6fscFinNPCU" title="Video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p>¡Nuevo video agregado!</p>
-            </div>
-            <div class="gallery-item">
-                <iframe width="320" height="180" src="https://www.youtube.com/embed/1IWvyq89G5E" title="Video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p>¡Otro video divertido!</p>
-            </div>
-            <div class="gallery-item">
-                <iframe width="320" height="180" src="https://www.youtube.com/embed/PDZH2Bn-u9k" title="Video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p>¡Otro video genial!</p>
-            </div>
-            <!-- Tus dos videos nuevos -->
-            <div class="gallery-item">
-                <iframe width="320" height="180" src="https://www.youtube.com/embed/p0T0gipONL8" title="Video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p>¡Nuevo video divertido 1!</p>
-            </div>
-            <div class="gallery-item">
-                <iframe width="320" height="180" src="https://www.youtube.com/embed/nv_psEcJqPI" title="Video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p>¡Nuevo video divertido 2!</p>
-            </div>
-        </div>
-        <!-- Script de Imgur solo una vez después de la galería -->
-        <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-    </section>
-    <section id="opinion">
-        <h2>Opinión sobre videojuegos</h2>
-        <p>
-            Me encantan los videojuegos y aquí comparto mi opinión sobre los títulos que más me han gustado, los que espero o los que quiero recomendar. ¡Si quieres que hable de algún juego en particular, házmelo saber!
-        </p>
-        <ul>
-            <li><strong>The Legend of Zelda: Breath of the Wild</strong>: Un juego increíblemente abierto, lleno de aventuras y sorpresas. ¡Altamente recomendado!</li>
-            <li><strong>Among Us</strong>: Perfecto para jugar con amigos y reírse un buen rato.</li>
-            <li><strong>Super Mario Odyssey</strong>: Un clásico moderno lleno de creatividad.</li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contacto</h2>
-        <form id="contact-form">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Correo:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
-        <div id="form-message"></div>
-    </section>
+            <script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+        </section>
+        <section id="opinion" class="section-card">
+            <h2>Opinión sobre videojuegos</h2>
+            <p>
+                Me encantan los videojuegos y aquí comparto mi opinión sobre los títulos que más me han gustado, los que espero o los que quiero recomendar. ¡Si quieres que hable de algún juego en particular, mándame mensaje!
+            </p>
+            <ul>
+                <li><strong>The Legend of Zelda: Breath of the Wild</strong>: Un juego increíblemente abierto, lleno de aventuras y sorpresas. ¡Altamente recomendado!</li>
+                <li><strong>Among Us</strong>: Perfecto para jugar con amigos y reírse un buen rato.</li>
+                <li><strong>Super Mario Odyssey</strong>: Un clásico moderno lleno de creatividad.</li>
+            </ul>
+        </section>
+        <section id="contact" class="section-card">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <label for="name"><i class="fa-solid fa-user"></i> Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email"><i class="fa-solid fa-envelope"></i> Correo:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message"><i class="fa-solid fa-comment"></i> Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+            </form>
+            <div id="form-message"></div>
+        </section>
+    </main>
     <footer>
         <p>© 2025 Yael Rendon Soto - Sígueme en 
-            <a href="#" target="_blank">Twitter</a>, 
-            <a href="#" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/tu_usuario" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>, 
+            <a href="https://linkedin.com/in/tu_usuario" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>, 
+            <a href="https://instagram.com/tu_usuario" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
         </p>
     </footer>
     <script src="script.js"></script>
